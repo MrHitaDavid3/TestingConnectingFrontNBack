@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="adHubStyle.css" />
+</head>
+<body>    
+  <div class="admin-container">
+    <button type="button" id="log-out" class="red">Log Out</button>
+
+    <h1>Admin Dashboard</h1>
+
+
+    <!-- Room Bookings Section -->
+    <section class="room-bookings">
+      <button class="dropdown-toggle" onclick="toggleSection('booking-section')">Room Bookings</button>
+      <div id="booking-section" class="dropdown-content">
+        <table id="booking-table">
+          <thead>
+          <tr>
+            <th>Room ID</th>
+            <th>Capacity</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Booked By</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- Suspension Cases Section -->
+    <section class="suspension-cases">
+      <button class="dropdown-toggle" onclick="toggleSection('suspension-section')">Suspension Cases</button>
+      <div id="suspension-section" class="dropdown-content">
+          <table id="suspension-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Details</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+    </section>
+  </div>
+  
+
+  <div id="letter-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h3>Reinstatement Letter</h3>
+      <p id="letter-content"></p>
+    </div>
+  </div>
+  
+
+  <script src="adHubScript.js"></script>
+</body>
+</html>

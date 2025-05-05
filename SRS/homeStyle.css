@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(https://pro2-bar-s3-cdn-cf1.myportfolio.com/f9f41814-f1e4-42ff-ab4a-b7a30f6b76a5/92388a1c-dceb-4763-b495-ae018683b365_rw_1920.jpg?h=65cc71e49048b6446c13d7605e6029c0); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  .selection-screen {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .selection-screen h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Base Button Style */
+  .selection-screen button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.1s ease;
+  }
+  
+  /* Gold Button */
+  .selection-screen button.gold {
+    background-color: #ffe08a;
+    color: #4a4a4a;
+  }
+  .selection-screen button.gold:hover {
+    background-color: #e6c766;
+    color: #222;
+  }
+  
+  /* Blue Button */
+  .selection-screen button.blue {
+    background-color: #a3c8f0;
+    color: #003366;
+  }
+  .selection-screen button.blue:hover {
+    background-color: #82b3e3;
+    color: #001f3f;
+  }
+  
+  .selection-screen button:active {
+    transform: scale(0.98);
+  }
+
+  /* Red Button for Log Out */
+.selection-screen button.red {
+  background-color: #f8a4a4;
+  color: #660000;
+  padding: 8px 16px;
+  font-size: 14px;
+  width: auto;
+}
+.selection-screen button.red:hover {
+  background-color: #f27777;
+  color: #330000;
+}
+
+  

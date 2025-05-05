@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Account Suspended</title>
+  <link rel="stylesheet" href="suspendStyle.css" />
+</head>
+<body>
+  <div class="suspended-container">
+    <h1>Your Account Has Been Suspended</h1>
+    <p class="suspension-reason">
+      Reason: <strong>Failure to comply with community guidelines.</strong>
+    </p>
+    <p>
+      If you believe this suspension was made in error or wish to request reinstatement, please provide your details and a brief explanation below. Our support team will review your request and respond accordingly.
+    </p>
+
+    <form id="reinstatement-form">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="reason">Reason for Request:</label>
+      <textarea id="reason" name="reason" rows="4" required></textarea>
+
+      <button type="submit">Submit Request</button>
+
+      <button id="back-button" type="button" style="margin-bottom: 15px;">
+        ← Log out
+      </button>
+  
+    </form>
+
+    <div id="success-message" style="display: none; text-align: center;">
+        <h2>Your request has been sent.</h2>
+        <p>Thank you. Our team will review your submission and get back to you via email.</p>
+        <button id="logout-button" type="button">Log Out</button>
+      </div>      
+  </div>
+
+  <script src="suspendScript.js"></script>
+</body>
+</html>

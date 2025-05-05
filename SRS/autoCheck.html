@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Room Checkout</title>
+  <link rel="stylesheet" href="autoCheckStyle.css" />
+</head>
+<body>
+  <div class="checkout-container">
+    <h2>Confirm Your Booking</h2>
+
+    <div id="booking-details" class="booking-details"></div>
+
+    <button id="back-button" type="button" style="margin-bottom: 15px; background-color: #6c757d;">
+      ← Back to Home
+    </button>
+    
+
+    <form id="checkout-form">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="group">Booking Name/Group:</label>
+      <input type="text" id="group" required>
+
+      <button type="submit">Submit My Booking</button>
+    </form>
+  </div>
+
+  <script src="autoCheckScript.js"></script>
+</body>
+</html>

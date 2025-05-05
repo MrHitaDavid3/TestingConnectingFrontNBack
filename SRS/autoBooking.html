@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Finder (Auto-Booking)</title>
+  <link rel="stylesheet" href="bookingStyle.css" />
+</head>
+<body>
+  <div class="filter-container">
+    <h2>Room Preferences</h2>
+
+    <button id="back-button" type="button">← Back to Room Selection</button>
+
+    <form id="room-filter-form">
+      <label for="floor">Preferred Floor:</label>
+      <select id="floor">
+        <option value="3">3rd Floor</option>
+        <option value="6">6th Floor</option>
+        <option value="7">7th Floor</option>
+        <option value="8">8th Floor</option>
+        <option value="Any">Any Floor</option>
+      </select>
+
+      <label for="day-of-week">Day of the Week:</label>
+      <select id="day-of-week">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+      </select>
+
+      <div class="time-row">
+        <div>
+          <label for="from-time">From:</label>
+          <input type="time" id="from-time" step="900" />
+        </div>
+        <div>
+          <label for="until-time">Until:</label>
+          <input type="time" id="until-time" step="900" />
+        </div>
+      </div>
+
+      <label for="room-size">Room Size (Capacity):</label>
+      <select id="room-size">
+        <option value="1-4">1-4 people</option>
+        <option value="5-8">5-8 people</option>
+        <option value="9-12">9-12 people</option>
+        <option value="Any">Any</option>
+      </select>
+
+      <button type="submit">Find Rooms</button>
+    </form>
+
+    <h3>Available Rooms:</h3>
+    <div id="room-results"></div>
+  </div>
+
+  <script src="bookingScript.js"></script>
+</body>
+</html>

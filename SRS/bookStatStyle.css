@@ -1,0 +1,198 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(https://pro2-bar-s3-cdn-cf1.myportfolio.com/f9f41814-f1e4-42ff-ab4a-b7a30f6b76a5/92388a1c-dceb-4763-b495-ae018683b365_rw_1920.jpg?h=65cc71e49048b6446c13d7605e6029c0);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.status-container {
+  background-color: white;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Dropdown enhancements */
+details {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #f0f0f0;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  border-bottom: 1px solid #ddd;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::after {
+  content: "▼";
+  font-size: 13px;
+  color: #666;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::after {
+  transform: rotate(-180deg);
+}
+
+details > div {
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.booking {
+  background: #f8f9fa;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.booking p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.booking .status {
+  font-weight: bold;
+  color: green;
+}
+
+.booking .status.pending { color: orange; }
+.booking .status.missed { color: red; }
+
+.cancel-button,
+.checkin-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 13px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.cancel-button { background: #ff4d4f; transition: background-color 0.3s ease;}
+.cancel-button:hover { background: #d9363e; }
+
+.checkin-button { background: #28a745; transition: background-color 0.3s ease;}
+.checkin-button:hover { background: #218838; }
+
+input[type="file"] { display: none; }
+
+.custom-file-upload {
+  display: block;
+  text-align: center;
+  background: #007bff;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+#back-button-home,
+#back-button-rooms {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background: #6c757d;
+  color: white;
+  margin-bottom: 15px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+#back-button-home:hover,
+#back-button-rooms:hover {
+  background: darkgray;
+}
+
+@media (max-width: 480px) {
+  .status-container {
+    padding: 8px;
+  }
+
+  h2 { font-size: 16px; }
+  h3 { font-size: 14px; }
+
+  .booking p,
+  details > div {
+    font-size: 13px;
+  }
+
+  .cancel-button,
+  .checkin-button,
+  .custom-file-upload,
+  #back-button-home,
+  #back-button-rooms {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+/* Style for the Submit Photo button */
+.submit-photo {
+  background-color: #007bff; /* Blue background */
+  color: white; /* White text */
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.submit-photo:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.hidden {
+  display: none;
+}

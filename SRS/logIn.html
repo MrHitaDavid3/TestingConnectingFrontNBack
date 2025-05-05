@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Library Room Finder - Login</title>
+  <link rel="stylesheet" href="logInStyle.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Login Section -->
+    <div id="login-section" class="form-box">
+      <h2>Library Room Finder</h2>
+      <form id="loginForm">
+        <input type="text" id="login-id" placeholder="SJSUOne ID or SJPL barcode" required />
+        <input type="password" id="login-pin" placeholder="SJSUOne Password or PIN" required />
+        <button type="submit">Sign In</button>
+      </form>
+      <p>Don’t have an account? <a href="#" id="show-signup">Create one</a></p>
+    </div>
+
+    <!-- Signup Section -->
+    <div id="signup-section" class="form-box" style="display: none;">
+      <h2>Create a New Account</h2>
+      <form id="signupForm">
+        <h4>Library Info:</h4>
+        <input type="text" id="signup-id" placeholder="SJSU ID or Library Card #" required />
+        <input type="password" id="signup-pin" placeholder="SJSU Password or Library Pin" required />
+
+        <h4>Account Info:</h4>
+        <input type="email" id="signup-email" placeholder="Email" required />
+        <input type="password" id="signup-pass" placeholder="Create Password" required />
+        <input type="password" id="signup-confirm" placeholder="Confirm Password" required />
+
+        <label>
+          <input type="checkbox" id="agree-terms" />
+          I agree to the <a href="#">terms and conditions</a>.
+        </label>
+        <button type="submit">Create Account</button>
+      </form>
+      <p>Already have an account? <a href="#" id="show-login">Log In</a></p>
+    </div>
+  </div>
+
+  <script src="logInScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(https://pro2-bar-s3-cdn-cf1.myportfolio.com/f9f41814-f1e4-42ff-ab4a-b7a30f6b76a5/92388a1c-dceb-4763-b495-ae018683b365_rw_1920.jpg?h=65cc71e49048b6446c13d7605e6029c0); /* Replace with your image path */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  }
+  
+  .form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 12px;
+    padding: 12px;
+    background-color: #2b65d9;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1a45a0;
+  }
+  
+  label {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  h4 {
+    margin: 12px 0 6px;
+  }
+  
+  p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  
